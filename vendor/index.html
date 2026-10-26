@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="gb-retract" content="#panel">
+<link rel="icon" href="data:,">
+<title>Ribbons</title>
+<link rel="stylesheet" href="ribbons.css">
+</head>
+<body>
+<div id="stage" aria-label="OKLab ribbon identity. Drag to change the color.">
+  <svg id="loom" aria-label="Woven color seal and ribbons"></svg>
+  <div id="marks">
+    <div class="mark" id="mark-profile"><i id="avatar"></i><span id="bars"><b></b><b></b></span></div>
+    <div class="mark" id="mark-device"><i id="stripes"></i><i id="screen"><i id="lens"></i></i></div>
+    <div class="mark" id="mark-label"><em id="seed-name">nava</em></div>
+  </div>
+  <p id="credit">idea after @lynzrand (lynzrand/ribbons); clean-room implementation, no code copied</p>
+</div>
+<aside id="panel">
+  <p class="panel-title">Identity</p>
+  <div id="swatches"></div>
+  <div class="main-row">
+    <i id="main-chip"></i>
+    <span id="main-hex">#9f63b9</span>
+    <button type="button" id="btn-copy">Copy</button>
+  </div>
+  <label class="field">Seed
+    <input id="seed-input" type="text" maxlength="24" autocomplete="off" enterkeyhint="done" value="nava">
+  </label>
+  <button type="button" class="wide" id="btn-random">Random identity</button>
+  <button type="button" class="wide" id="btn-seed">From seed</button>
+  <label class="field">Contrast <b id="rng-contrast-v">90</b>
+    <input id="rng-contrast" type="range" min="0" max="100" value="90">
+  </label>
+  <label class="field">Segments <b id="rng-segments-v">5</b>
+    <input id="rng-segments" type="range" min="3" max="8" step="1" value="5">
+  </label>
+  <label class="field">Chroma affinity <b id="rng-chroma-v">18</b>
+    <input id="rng-chroma" type="range" min="0" max="100" value="18">
+  </label>
+  <label class="field">Primary weight <b id="rng-primary-v">52</b>
+    <input id="rng-primary" type="range" min="0" max="100" value="52">
+  </label>
+  <div id="variations" role="group" aria-label="Variation">
+    <button type="button" data-v="0">1</button>
+    <button type="button" data-v="1">2</button>
+    <button type="button" data-v="2">3</button>
+    <button type="button" data-v="3">4</button>
+  </div>
+  <p class="hint">Drag sideways for hue, up and down for lightness. Pinch to change chroma. Tap a swatch to copy it.</p>
+</aside>
+<script src="ribbons.js"></script>
+</body>
+</html>
