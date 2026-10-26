@@ -1,0 +1,17 @@
+{
+  "id": "ribbons",
+  "title": { "en": "Ribbons", "zh": "丝带" },
+  "intro": {
+    "en": "Pick a main color in OKLab and weave a weighted ribbon identity: a seal, hanging ribbons, a treemap, and small profile marks.",
+    "zh": "在 OKLab 中选定主色，织出加权丝带身份：徽记、垂下的色带、矩形拼贴，以及小小的档案标记。"
+  },
+  "officialFiles": [
+    "vendor/index.html",
+    "vendor/ribbons.css",
+    "vendor/ribbons.js",
+    "vendor/LICENSE.txt"
+  ],
+  "playHtml": "play.html",
+  "aspect": "phone",
+  "githubRepo": "ypaaaaaaaaaaaaa/ribbons"
+}
